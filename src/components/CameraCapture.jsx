@@ -74,7 +74,7 @@ const CameraCapture = () => {
             "Content-Type": "multipart/form-data",
           },
         });
-        alert("Photo uploaded successfully!");
+        // alert("Photo uploaded successfully!");
       } catch (err) {
         setError("Error uploading photo: " + err.message);
       }

@@ -34,6 +34,11 @@ const Gallery = () => {
   if (error) {
     return <div className="text-red-500 p-4">{error}</div>;
   }
+  if (photos.length === 0) {
+    return (
+      <div className="text-gray-400 p-4 text-center">No photos available</div>
+    );
+  }
 
   return (
     <div className="container mx-auto p-4">
