@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://my-photos-backend.onrender.com",
+        target: "https://my-photos-backend-1.onrender.com",
         changeOrigin: true,
       },
     },

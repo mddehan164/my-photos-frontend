@@ -69,11 +69,15 @@ const CameraCapture = () => {
       );
 
       try {
-        await axios.post("/api/photos/upload", formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        });
+        await axios.post(
+          "https://my-photos-backend-1.onrender.com/api/photos/upload",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        );
         // alert("Photo uploaded successfully!");
       } catch (err) {
         setError("Error uploading photo: " + err.message);

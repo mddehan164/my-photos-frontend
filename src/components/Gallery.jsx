@@ -11,7 +11,9 @@ const Gallery = () => {
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await axios.get("/api/photos");
+        const response = await axios.get(
+          "https://my-photos-backend-1.onrender.com/api/photos"
+        );
         setPhotos(response.data);
         setLoading(false);
       } catch (err) {
