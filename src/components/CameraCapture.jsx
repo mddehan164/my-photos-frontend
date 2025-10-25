@@ -141,8 +141,8 @@ const CameraCapture = () => {
       </div>
       {permissionState === "granted" && (
         <div
-          onClick={capturePhoto}
-          className="flex justify-center items-center w-full lg:w-1/2 mx-auto   gap-2 bg-gray-300"
+          // onClick={capturePhoto}
+          className="flex justify-center items-center w-full lg:w-1/2 mx-auto gap-2"
         >
           {/* <video
             src={video}
